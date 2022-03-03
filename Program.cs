@@ -35,6 +35,8 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
+app.MapGetAllFoodItems();
+
 app.Run();
 
 internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
